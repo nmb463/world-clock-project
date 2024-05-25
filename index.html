@@ -12,29 +12,32 @@
     <div class="container">
     <h1>World Clock</h1>
 
-    <select>
+    <select id="select-city">
         <option value="">Select a city...</option>
-        <option value="">Seattle</option>
-        <option value="">Prague</option>
-        <option value="">Cairo</option>
+        <option value="Australia/Melbourne">Melbourne</option>
+        <option value="Europe/Prague">Prague</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="America/Toronto">Toronto</option>
     </select>
 
-    <div class="city" id="taipei" >
-        <div>
-        <h2>Taipei</h2>
-        <div class="date">Thursday, May 23, 2024</div>
+    <div id="displayed-cities">
+        <div class="city" id="taipei" >
+            <div>
+            <h2>Taipei</h2>
+            <div class="date"></div>
+            </div>
+
+            <div class="time"></div>
         </div>
 
-        <div class="time">10:22 <small>AM</small></div>
-    </div>
+        <div class="city" id="buenos-aires">
+            <div>
+            <h2>Bueno Aires</h2>
+            <div class="date"></div>
+            </div>
 
-    <div class="city" id="buenos-aires">
-        <div>
-        <h2>Bueno Aires</h2>
-        <div class="date">Wednesday, May 22, 2024</div>
+            <div class="time"></div>
         </div>
-
-        <div class="time">10:21 <small>PM</small></div>
     </div>
 
     </div>

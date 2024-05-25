@@ -21,3 +21,25 @@ buenosAiresTimeElement.innerHTML = buenosAiresTime.format("h:mm:ss [<small>]A[</
 
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+    let citySelectedTimeZone = event.target.value;
+    let citySelectedName = citySelectedTimeZone.split("/")[1];
+    let citySelectedDate = moment().tz(citySelectedTimeZone).format("dddd, MMMM Do, YYYY");
+    let citySelectedTime = moment().tz(citySelectedTimeZone).format("h:mm:ss [<small>]A[</small>]");
+    let citiesDisplayedElement = document.querySelector("#displayed-cities");
+    citiesDisplayedElement.innerHTML = 
+    `
+    <div class="city">
+        <div>
+            <h2>${citySelectedName}</h2>
+            <div class="date">${citySelectedDate}</div>
+        </div>
+
+        <div class="time">${citySelectedTime}</div>
+    </div>
+    `;
+}
+
+let citiesSelectElement = document.querySelector("#select-city");
+citiesSelectElement.addEventListener("change", updateCity);
