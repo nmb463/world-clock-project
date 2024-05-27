@@ -17,6 +17,16 @@ let buenosAiresTime = moment().tz("America/Argentina/Buenos_Aires");
 
 buenosAiresDateElement.innerHTML = buenosAiresTime.format("dddd, MMMM Do, YYYY");
 buenosAiresTimeElement.innerHTML = buenosAiresTime.format("h:mm:ss [<small>]A[</small>]");
+
+
+//Dublin 
+let dublinElement = document.querySelector("#dublin");
+let dublinDateElement = dublinElement.querySelector(".date");
+let dublinTimeElement = dublinElement.querySelector(".time");
+let dublinTime = moment().tz("Europe/Dublin");
+
+dublinDateElement.innerHTML = dublinTime.format("dddd, MMMM Do, YYYY");
+dublinTimeElement.innerHTML = dublinTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
 updateTime();
