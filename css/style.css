@@ -1,5 +1,5 @@
 body {
-    background-color: #f9f7fe;
+    background: #142339;
 }
 
 h1{
@@ -18,13 +18,16 @@ select {
     font-size: 16px;
     border-radius: 4px;
     padding: 10px;
-    background: white;
+    background: #088484;
+    color: #D6AA71;
+    border: 3px solid #D6AA71;
 }
 
 .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: #088484;
+    color: #D6AA71; 
     padding: 30px;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 10px;
@@ -43,7 +46,7 @@ select {
 }
 
 .date {
-    opacity: 0.7;
+    font-weight: 500;
 }
 
 .time{
@@ -60,5 +63,9 @@ select {
 footer {
     text-align: center;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.6);
+    color:  #D6AA71;
+}
+
+footer a {
+    color: #E68F8F;
 }
