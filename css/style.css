@@ -20,7 +20,7 @@ select {
     padding: 10px;
     background: #088484;
     color: #D6AA71;
-    border: 3px solid #D6AA71;
+    border: 2px solid #D6AA71;
 }
 
 .container {
@@ -67,5 +67,5 @@ footer {
 }
 
 footer a {
-    color: #E68F8F;
+    color: #C1ABCE
 }
